@@ -148,7 +148,7 @@
         </nav>
       </div>
       <main class="flex-1 flex">
-        <div class="flex flex-col w-full max-w-xs flex-grow border-l border-r">
+        <div class="relative flex flex-col w-full max-w-xs flex-grow border-l border-r bg-gray-200">
           <div class="flex-shrink-0 px-4 py-2 flex items-center justify-between border-b">
             <button class="flex items-center text-sm font-semibold text-gray-600">
               Short by data
@@ -299,43 +299,122 @@
             </a>
           </div>
         </div>
-        <div class="flex-1">
-          <div>
-            <div class="flex px-5 py-4 items-center justify-between bg-gray-100">
+        <div class="flex-1 flex flex-col w-0">
+          <div class="relative shadow-md">
+            <div class="flex px-5 py-4 items-center justify-between bg-gray-100 border-b">
               <div class="flex items-center">
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
-                </svg>
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
-                </svg>
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
-                </svg>
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
-                </svg>
+                <button>
+                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
+                  </svg>
+                </button>
+                <button class="ml-6">
+                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                  </svg>
+                </button>
+                <button class="ml-6">
+                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </button>
+                <button class="ml-6">
+                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+                  </svg>
+                </button>
+                <button class="ml-6">
+                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
+                  </svg>
+                </button>
               </div>
               <div class="flex items-center">
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
-                </svg>
+                <button>
+                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <button class="ml-4">
+                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                  </svg>
+                </button>
               </div>
             </div>
-            <div></div>
+            <div class="flex items-center justify-between px-5 py-4 bg-white">
+              <h3 class="text-xl text-gray-900 truncate">Re: Student discount really a good package at that price?</h3>
+              <div class="ml-4 flex-shrink-0">
+                <span>#1428</span>
+                <span class="ml-2 text-sm font-semibold text-green-900 bg-green-200 rounded-full px-2 py-1">Active</span>
+              </div>
+            </div>
           </div>
-          <div>
-            <article></article>
-            <article></article>
-            <article></article>
+          <div class="flex-1 overflow-y-auto p-3">
+            <article class="mt-2 px-10 pt-6 pb-8 bg-white rounded-lg shadow">
+              <div class="flex items-center justify-between">
+                <p class="text-lg font-semibold">
+                  <span class="text-gray-900">Joe Armstrong</span>
+                  <span class="text-gray-600 ml-2">Wrote</span>
+                </p>
+                <div class="flex items-center">
+                  <span class="text-xs text-gray-600">Yesterday at 7:24 AM</span>
+                  <img class="ml-5 h-9 w-9 object-cover rounded-full" src="https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=6&w=144&q=80" alt="">
+                </div>
+              </div>
+              <div class="mt-6 text-sm text-gray-800">
+                <p>Thank you so much! Can't wait to try it out :)</p>
+              </div>
+            </article>
+            <article class="mt-3 px-10 pt-6 pb-8 bg-white rounded-lg shadow">
+              <div class="flex items-center justify-between">
+                <p class="text-lg font-semibold">
+                  <span class="text-gray-900">Asmit Nepali</span>
+                  <span class="text-gray-600 ml-2">Repli</span>
+                </p>
+                <div class="flex items-center">
+                  <span class="text-xs text-gray-600">Yesterday at 7:24 AM</span>
+                  <img class="ml-5 h-9 w-9 object-cover rounded-full" src="https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=6&w=144&q=80" alt="">
+                </div>
+              </div>
+              <div class="mt-6 text-sm text-gray-800">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  Why do we use it?
+                </p>
+                <p class="mt-2">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+                <p class="mt-2 font-semibold text-gray-900">Asmit Nepali</p>
+                <p>Developer</p>
+              </div>
+            </article>
+            <article class="mt-3 px-10 pt-6 pb-8 bg-white rounded-lg shadow">
+              <div class="flex items-center justify-between">
+                <p class="text-lg font-semibold">
+                  <span class="text-gray-900">Joe Armstrong</span>
+                  <span class="text-gray-600 ml-2">Wrote</span>
+                </p>
+                <div class="flex items-center">
+                  <span class="text-xs text-gray-600">Yesterday at 7:24 AM</span>
+                  <img class="ml-5 h-9 w-9 object-cover rounded-full" src="https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=6&w=144&q=80" alt="">
+                </div>
+              </div>
+              <div class="mt-6 text-sm text-gray-800">
+                <p>Thank you so much! Can't wait to try it out :)</p>
+              </div>
+            </article>
           </div>
         </div>
       </main>
